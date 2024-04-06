@@ -67,7 +67,7 @@ print(res)
 pag.confirm(f"{obv} \n {inf} \n {res}")
 
 # graph the observations
-plt.plot([10,20],[10*val_actual[0]/val_actual[0] +0.005,10*val_actual[1]/val_actual[1]+0.005],'+-',label='Actual Expretted Regression')
+plt.plot([10,20],[10*val_actual[0]/val_actual[0] +0.005,10*val_actual[1]/val_actual[1]+0.005],'+-',label='Actual Expected Regression')
 plt.plot([10,20],[10*val_opt[0]/val_actual[0],10*val_opt[1]/val_actual[1]],'+-',label='G-Optimized Regression')
 plt.plot([10,20],[10*val_org[0]/val_actual[0],10*val_org[1]/val_actual[1]],'+-',label="General Linear Regression")
 plt.legend()
